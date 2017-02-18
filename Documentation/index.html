@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Flatfy - Responsive One Page Resume/CV</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/default.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="site-header" role="banner">
+			<h1 class="site-title">Flatfy</h1>
+			<p class="site-description">Responsive One Page Resume/CV - Documentation</p>
+		</header><!-- .site-header -->
+		<div id="main">
+			<div class="intro">
+				<p>Firstly, a huge thanks for purchasing this template! If you have any questions that are not answered here, please feel free to email via our user page contact form <a href="https://creativemarket.com/Linewp">here</a>. Thanks so much!</p>
+				<ul class="byline">
+					<li><em>Template created on</em> 18/10/2014 <em>by</em> <a href="http://linewp.com/">Linewp</a></li>
+					<li><em>Email:</em> <a href="mailto:30theme@gmail.com">30theme@gmail.com</a></li>
+					<li><em>Version:</em> 1.0</li>
+				</ul>	
+			</div><!-- .intro -->
+			<div id="content" role="main">
+				<section>
+					<h2 id="toc">Table of Contents</h2>
+					<ol>
+						<li><a href="#filesStructure">Files Structure</a>
+							<ol>
+								<li><a href="#html">HTML Files and Structure</a></li>
+								<li><a href="#php">PHP Files and Structure</a></li>
+								<li><a href="#css">CSS Files and Structure</a></li>
+								<li><a href="#javascript">JavaScript Files and Structure</a></li>
+							</ol>
+						</li>
+						<li><a href="#customization">Customization</a>
+							<ol>
+								<li><a href="#navbar">Replace Navbar Title</a></li>
+								<li><a href="#text">Edit Text</a></li>
+								<li><a href="#status">Change Status Numbers</a></li>
+								<li><a href="#skills">Change Skills Charts</a></li>
+								<li><a href="#animations">Change InView Animations</a></li>
+								<li><a href="#form">Change the Email Address for Contact Form</a></li>
+								<li><a href="#social">Add Links to Social Network Profiles</a></li>
+							</ol>
+						</li>
+						<li><a href="#upload">Upload</a></li>
+						<li><a href="#credits">Credits</a></li>
+					</ol>
+					<hr />
+				</section>
+				<section>
+					<h2 id="filesStructure">A. Files Structure - <a href="#toc">top</a></h2>
+					<p>Every file (HTML, CSS, JS) that was created by us has clear code, wrapped with comments - all this for your convenience.</p>
+					<ul>
+					<li><strong>css</strong> - CSS styles folder</li>
+					<li><strong>fonts</strong> - webfont icons folder</li>
+					<li><strong>img</strong> - folder for images</li>
+					<li><strong>js</strong> - JavaScript files folder</li>
+					<li><strong>php</strong> - PHP contact script folder</li>
+					<li><strong>index.html</strong> - main HTML file</li>
+					</ul>
+
+					<hr />
+					<h3 id="html">1. HTML Files and Structure</h3>
+					<p>This Template has a Responsive layout and is based on the <strong>Bootstrap Framework</strong>.
+                    For more information about this visit <a target="_blank" href="http://getbootstrap.com/">Bootstrap site</a>.</p>
+                    <p>The default Bootstrap grid system utilizes 12 columns, making for a 940px wide container without responsive features enabled. 
+                    With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+					<p><code>index.html</code> is the main template file that contains the HTML structure of the template. Here is the general structure (shortened):</p>
+					
+					<pre><code class="html">					
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;!-- Included CSS Files --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+         &lt;!-- Preloader --&gt;
+          &lt;!-- Navigation --&gt;
+           &lt;!-- Header --&gt;
+            &lt;!-- About Section --&gt;
+             &lt;!-- Status Section --&gt;
+              &lt;!-- Skills Section --&gt;
+               &lt;!-- Services Section --&gt;
+                &lt;!-- Portfolio Section --&gt;
+               &lt;!-- Here Me Section --&gt;
+              &lt;!-- Resume Section --&gt;
+             &lt;!-- Clients Aside --&gt;
+            &lt;!-- Contact section --&gt;
+           &lt;!-- Footer --&gt;
+          &lt;!-- Portfolio Modals --&gt;
+         &lt;!-- Included JS Files --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+
+					<hr />
+					<h3 id="php">2. PHP Files and Structure</h3>
+					<p><code>contact_me.php</code> is the template file that contains the PHP code to handle the contact form massages.</p>
+					<hr />
+					<h3 id="css">3. CSS Files and Structure</h3>
+					<p>All CSS files can be found in the template’s <code>css</code> folder. Here's the list of the files used within the template and a short descriptions of their function:</p>
+					<ul>
+						<li><code>style.css</code> - the main CSS file that includes all template styles and formatting.</li>
+						<li><code>bootstrap.min.css</code> - includes bootstrap main styles.</li>
+						<li><code>animate.css</code> - A cross-browser library of CSS animations</li>
+						<li><code>etlinefont.css</code> - This file includes styles for the etline font icons.</li>
+						<li><code>font-awesome.min.css</code> - This file includes styles for the Font Awesome icons.</li>
+					</ul>
+					<p>Styles.css is probably the file you are most likely to edit if you are changing the look of the page.The file is commented and broken into sections using:</p>
+
+					<pre><code class="css">					
+/* TABLE OF CONTENTS
+
+    1. Preloader
+    2. Basic Document Styles
+    3. Navigation
+    4. Header
+    5. Status
+    6. Skills
+    7. Portfolio
+    8. Here Me
+    9. Resume
+    10. Clients
+    11. Contact
+    12. Footer
+    13. Social Icon
+    14. Portfolio Modal
+    15. Media Queries
+*/
+					</code></pre>
+
+					<hr />
+					<h3 id="javascript">4. JavaScript Files and Structure</h3>
+					<p>This template uses JavaScript to enhance the user’s experience. All JavaScript files can be found in the template’s <code>js</code> folder. Here's the list of the files used within the template:</p>
+					<pre><code class="html">					
+    &lt;!-- jQuery Version 1.11.1 --&gt;
+    &lt;script src=&quot;js/jquery-1.11.1.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Bootstrap Core JavaScript --&gt;
+    &lt;script src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Plugin JavaScript --&gt;
+    &lt;script src=&quot;js/jquery.easing.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/jquery.easypiechart.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/classie.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/cbpAnimatedHeader.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/waypoints.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/jquery.animateNumber.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/wow.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Contact Form JavaScript --&gt;
+    &lt;script src=&quot;js/jqBootstrapValidation.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/contact_me.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom Theme JavaScript --&gt;
+    &lt;script src=&quot;js/custom.js&quot;&gt;&lt;/script&gt;
+					</code></pre>
+					<p>In <code>custom.js</code> includes other scripts calls and our JS functions made for template.</p>
+					<hr />
+				</section>
+				<section>
+					<h2 id="customization">C. Customization - <a href="#toc">top</a></h2>
+					<p>You can simply change template's, make the following changes.</p>
+					<hr />
+					<h3 id="navbar">1. Replace Navbar Title</h3>
+					<p>To change the Navbar Title replace the <code>Flatfy</code> text located in the template's <code>index.html</code> file with yours (line 60).</p>
+
+					<pre><code class="html">
+&lt;a href=&quot;#page-top&quot; class=&quot;navbar-brand page-scroll&quot;&gt;Flatfy&lt;/a&gt;
+					</code></pre>
+					<hr />
+					<h3 id="text">2. Edit Text</h3>
+					<p>All static texts can be modified within the <code>index.html</code> file. For example, to change the text "Hi, I’m John Doe" open <code>index.html</code> and edit text on line 86.</p>
+					<hr />
+					<h3 id="status">3. Change Status Numbers</h3>
+					<p>To change the Status Numbers of your site open <code>custom.js</code> file within the <code>js</code> folder and edit the numbers on lines 73 to 91:</p>
+					<pre><code class="javascript">
+    $('.total-number-1').animateNumber({
+            number: 1650, //change value here
+            numberStep: comma_separator_number_step
+    }, 2000);
+        
+    $('.total-number-2').animateNumber({
+            number: 216, //change value here
+            numberStep: comma_separator_number_step
+    }, 2000);
+        
+    $('.total-number-3').animateNumber({
+            number: 142, //change value here
+            numberStep: comma_separator_number_step
+    }, 2000);
+        
+    $('.total-number-4').animateNumber({
+            number: 28, //change value here
+            numberStep: comma_separator_number_step
+    }, 2000);
+					</code></pre>
+					<hr />
+					<h3 id="skills">4. Change Skills Charts</h3>
+					<p>To change the Skills percent of your site open <code>index.html</code> and replace your own skills percent.</p>
+
+					<pre><code class="html">
+&lt;div class=&quot; col-xs-12 col-sm-6 col-md-6 col-lg-6 skills&quot;&gt;
+          &lt;span data-percent=&quot;75&quot; class=&quot;chart skilBg&quot;&gt; &lt;!-- change value here --&gt;
+          &lt;span class=&quot;percent&quot;&gt;75&lt;/span&gt; &lt;!-- change text here --&gt;
+          &lt;canvas height=&quot;152&quot; width=&quot;152&quot;&gt;&lt;/canvas&gt;&lt;/span&gt;
+            &lt;h4&gt;jQuery&lt;/h4&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet consectetur elit sed&lt;/p&gt;
+          &lt;/div&gt;
+					</code></pre>
+					<hr />
+					<h3 id="animations">5. Change InView Animations</h3>
+					<p>You can define a simple animation for any element which will be fired when element appears on screen.
+					List of all animations <a href="http://daneden.github.io/animate.css/">can be found here</a>.</p>
+					<p>To define an InView animation, add a <code>wow inview animated</code> attribute with desired animation's name to any element.
+					For example:</p>
+
+					<pre><code class="html">
+&lt;p class=&quot;wow fadeInUp animated&quot;&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&lt;/p&gt;
+					</code></pre>
+					<hr />
+					<h3 id="form">6. Change the Email Address for Contact Form</h3>
+					<p>Make sure that you change the default email address <em>yourname@yourdomain.com</em> to your own in <code>contact_me.php</code> file (line 19) within the <code>php</code> folder to receive emails when the contact form is submitted.</p>
+
+					<pre><code class="javascript">
+// Create the email and send the message
+$to = 'yourname@yourdomain.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Website Contact Form:  $name";
+$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
+$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: $email_address";	
+mail($to,$email_subject,$email_body,$headers);
+return true;			
+?>
+					</code></pre>
+					<hr />
+					<h3 id="social">7. Add Links to Social Network Profiles</h3>
+					<p>To add links to your social network profiles open <code>index.html</code> file and edit lines 608-613. Here is a default example:<p>
+
+					<pre><code class="html">
+&lt;!-- Social Icons --&gt;
+&lt;div class=&quot;col-md-8&quot;&gt;
+   &lt;ul class=&quot;list-inline social-buttons&quot;&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter wow bounceIn animated&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook wow bounceIn animated&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin wow bounceIn animated&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble wow bounceIn animated&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-instagram wow bounceIn animated&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-soundcloud wow bounceIn animated&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- Social Icons End --&gt;
+					</code></pre>
+					<p>All icons can be replaced with new ones, their number can be increased/decreased. All available icons you can see on official website - <a href="http://fontawesome.io/icons/">Font Awesome</a>.</p>
+					<p>To change icons, simply change the class names, for example: <code>fa-facebook</code> and <code>fa-twitter</code>. URLs can be attached to <code>href</code> attribute.</p>
+					<hr />
+				</section>
+				<section>
+					<h2 id="upload">D. Upload - <a href="#toc">top</a></h2>
+					<p>After you have made all necessary changes, upload the content of your selected version folder to your web hosting server using FTP client or File Manager (or similar) utility provided by the web hosting company.</p>
+					<hr />
+				</section>
+				<section>
+					<h2 id="credits">E. Credits - <a href="#toc">top</a></h2>
+					<p>We have used the following scripts, fonts or other files as listed.</p>
+					<ul>
+						<li>jQuery 1.11.1 library: <a href="http://jquery.com/download/">http://jquery.com</a></li>
+						<li>Bootstrap: <a href="http://getbootstrap.com/">http://getbootstrap.com</a></li>
+						<li>jqBootstapValidation: <a href="https://github.com/ReactiveRaven/jqBootstrapValidation">https://github.com/ReactiveRaven/jqBootstrapValidation</a></li>
+						<li>WOW.js: <a href="http://mynameismatthieu.com/WOW/">http://mynameismatthieu.com/WOW/</a></li>
+						<li>On-Scroll Animated Header: <a href="https://github.com/codrops/AnimatedHeader">https://github.com/codrops/AnimatedHeader</a></li>
+						<li>Animate.css: <a href="https://github.com/daneden/animate.css">https://github.com/daneden/animate.css</a></li>
+						<li>jQuery Easing Plugin: <a href="https://github.com/gdsmith/jquery.easing">https://github.com/gdsmith/jquery.easing</a></li>
+						<li>jQuery Waypoints: <a href="https://github.com/imakewebthings/jquery-waypoints/">https://github.com/imakewebthings/jquery-waypoints/</a></li>
+						<li>easyPieChart: <a href="https://github.com/rendro/easy-pie-chart">https://github.com/rendro/easy-pie-chart</a></li>
+						<li>Classie - class helper functions: <a href="https://github.com/desandro/classie">https://github.com/desandro/classie</a></li>
+						<li>jquery-animateNumber: <a href="https://github.com/aishek/jquery-animateNumber">https://github.com/aishek/jquery-animateNumber</a></li>
+						<li>Open Sans Font: <a href="http://www.google.com/fonts/specimen/Open+Sans">http://www.google.com/fonts/specimen/Open+Sans</a></li>
+						<li>Montserrat Font: <a href="http://www.google.com/fonts/specimen/Montserrat">http://www.google.com/fonts/specimen/Montserrat</a></li>
+						<li>Droid Serif Font: <a href="http://www.google.com/fonts/specimen/Droid+Serif">http://www.google.com/fonts/specimen/Droid+Serif</a></li>
+						<li>Font Awesome: <a href="http://fontawesome.io/">http://fontawesome.io/</a></li>
+						<li>etline font Icons: <a href="https://github.com/pprince/etlinefont-bower">https://github.com/pprince/etlinefont-bower</a></li>
+						<li>All portfolio illustrations by Justin Mezzell.: <a href="http://justinmezzell.com/">http://justinmezzell.com</a></li>
+						<li>About me section photo: <a href="http://www.flickr.com/photos/astragony/">http://www.flickr.com/photos/astragony/</a></li>
+						<li>Photos (free of copyright restrictions): <a href="http://unsplash.com/">http://unsplash.com</a></li>
+					</ul>
+					<hr />
+				</section>
+				<p><em>Once again, thank you so much for purchasing this template! Please feel free to email us if you have any questions or just want to make some suggestions.</em></p>
+				<p><strong>Linewp</strong></p>
+				<p><a href="#toc">Go To Table of Contents</a></p>
+			</div><!-- #content -->
+		</div><!-- #main -->
+		<footer class="site-info" role="contentinfo">
+			<p>© 2014 Linewp. All rights reserved.</p>
+		</footer><!-- .site-info -->
+	</div><!-- .wrap -->
+
+</body>
+</html>
